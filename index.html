@@ -10,9 +10,9 @@
 </head>
 <body class="font-sans">
     <header class="bg-white shadow-lg shadow-gray-300 fixed top-0 left-0 w-full z-10 p-0">
-        <div class="h-16 w-11/12 m-auto flex justify-between items-center py-9 px-6">
+        <div class="h-16 w-11/12 m-auto flex justify-between items-center py-9 px-1 lg:px-6">
             <p class="text-blue-600 text-3xl font-bold relative pr-30 min-w-64">DigitalPro <span class="text-xs font-normal absolute top-2 ml-2 px-2 py-1 whitespace-nowrap bg-blue-100 rounded-full">Marketing Agency</span></p>
-            <nav class="flex justify-between gap-8 text-md font-semibold text-gray-600">
+            <nav class="hidden lg:flex justify-between gap-8 text-md font-semibold text-gray-600 ">
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-all">Home</a>
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-all">Services</a>
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-all">Our Work</a>
@@ -22,40 +22,85 @@
             <button class="px-6 py-2 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-700 hover:shadow-lg transition-all shadow-md">Get a Consultation</button>
         </div>
     </header>
-    <main class="h-screen mt-20 p-0">
-        <div class="h-full bg-gradient-to-br from-blue-100 via-white to-purple-100 relative"> <!-- overlay -->
-            <div class="h-1/2 w-11/12 py-9 px-6 m-auto flex justify-center items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> <!-- container -->
-                <div class="w-1/2 h-full bg-blue-200">
+    <main class="h-screen mt-16 p-0">
+        <div class="h-full bg-gradient-to-br from-blue-50 via-white to-purple-50 relative"> <!-- overlay -->
+            <div class="h-3/5 w-11/12 py-9 px-6 m-auto flex justify-center items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> <!-- container -->
+                <div class="w-1/2 h-full">
                     <h1 class="text-6xl font-bold py-4">
                         We Create <span class="text-blue-600">Digital Success</span> for Your Brand
                     </h1>
-                    <p class="py-4">
+                    <p class="py-4 text-xl text-gray-800">
                         We provide integrated marketing solutions that help your company grow and increase sales through innovative strategies.
                     </p>
-                    <ul>
-                        <li>10+ Years Experience</li>
-                        <li>+500 Clients</li>
-                        <li>Professional Team</li>
+                    <ul class="py-4 flex justify-start gap-4 text-lg text-gray-700">
+                        <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>10+ Years Experience</li>
+                        <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>+500 Clients</li>
+                        <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>Professional Team</li>
                     </ul>
-                    <div>
-                        <button>Start your own Journey</button>
-                        <button>Watch the video</button>
+                    <div class="py-4 flex gap-4 text-lg">
+                        <button class="px-8 py-4 bg-blue-600 rounded-xl text-white font-semibold hover:bg-blue-700 hover:shadow-xl transition-all shadow-md">Start Your Journey Now</button>
+                        <button class="px-8 py-4 border-2 border-gray-200 rounded-xl hover:text-blue-700 hover:border-blue-700 transition-all ease-linear duration-300 font-semibold"><i class="fa-solid fa-play mr-1"></i> Watch the video</button>
                     </div>
                 </div>
-                <div class="w-1/2 h-full bg-red-200">
-                    <div></div>
-                    <div></div>
-                    <i class="fa-solid fa-chart-line"></i>
-                    <div>
-                        <i class="fa-solid fa-users"></i>
+                <div class="hidden lg:block w-1/2 h-96 bg-gradient-to-br from-blue-400 to-purple-400 rounded-3xl relative">
+                    <div class="absolute size-20 rounded-full bg-white opacity-20 right-10 top-10"></div>
+                    <div class="absolute size-32 rounded-full bg-white opacity-20 left-10 bottom-10"></div>
+                    <i class="fa-solid fa-chart-line absolute text-white opacity-50 left-1/2 top-1/2 text-8xl -translate-x-1/2 -translate-y-1/2"></i>
+                    <div class="absolute -left-5 -bottom-5 shadow-2xl shadow-gray-400 bg-white rounded-2xl w-44 px-2 py-4 flex justify-center items-center gap-2">
+                        <div class="size-12 bg-green-100 rounded-full flex justify-center items-center ">
+                            <i class="fa-solid fa-users text-xl text-green-600 "></i>
+                        </div>
                         <div> 
-                            Happy Clients <br>
-                            +500
+                            <span class="text-gray-500">Happy Clients</span> <br>
+                            <span class="font-bold text-2xl">+500</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <section class="pt-10 bg-white min-h-[80vh]">
+        <h2 class="pt-8 text-4xl text-center font-bold ">Our Integrated Services</h2>
+        <p class="text-center text-gray-600 text-xl p-4">We offer a comprehensive range of digital solutions to grow your business.</p>
+        <div class="w-28 m-auto h-1 bg-blue-600 rounded-full"></div>
+        <div class="w-11/12 py-9 px-6 m-auto flex flex-wrap justify-between gap-4"> <!-- container -->
+            <div class="group w-full lg:w-[32%]  border border-gray-300 p-8 rounded-xl hover:bg-white hover:border-blue-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
+                <div class="size-16 flex justify-center items-center bg-blue-100 rounded-xl  text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    <i class="fa-brands fa-facebook text-3xl"></i>
+                </div>
+                <h3 class="py-4 text-2xl font-bold">Search Engine Optimization</h3>
+                <p class="text-gray-600 mb-4">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
+                <ul>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                </ul>
+            </div>
+            <div class="group w-full lg:w-[32%] border border-gray-300 p-8 rounded-xl hover:bg-white hover:border-blue-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
+                <div class="size-16 flex justify-center items-center bg-blue-100 rounded-xl  text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    <i class="fa-brands fa-facebook text-3xl"></i>
+                </div>
+                <h3 class="py-4 text-2xl font-bold">Search Engine Optimization</h3>
+                <p class="text-gray-600 mb-4">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
+                <ul>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                </ul>
+            </div>
+            <div class="group w-full lg:w-[32%] border border-gray-300 p-8 rounded-xl hover:bg-white hover:border-blue-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
+                <div class="size-16 flex justify-center items-center bg-blue-100 rounded-xl  text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                    <i class="fa-brands fa-facebook text-3xl"></i>
+                </div>
+                <h3 class="py-4 text-2xl font-bold">Search Engine Optimization</h3>
+                <p class="text-gray-600 mb-4">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
+                <ul>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                    <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
