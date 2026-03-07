@@ -24,15 +24,15 @@
     </header>
     <main class="h-screen mt-16 p-0">
         <div class="h-full bg-gradient-to-br from-blue-50 via-white to-purple-50 relative"> <!-- overlay -->
-            <div class="h-3/5 w-11/12 py-9 px-6 m-auto flex justify-center items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> <!-- container -->
-                <div class="w-1/2 h-full">
-                    <h1 class="text-6xl font-bold py-4">
+            <div class="h-full lg:h-3/5 w-11/12 py-12 lg:py-9 px-1 lg:px-6 m-auto flex justify-center items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> <!-- container -->
+                <div class="w-full lg:w-1/2 h-full">
+                    <h1 class="text-4xl lg:text-6xl font-bold py-4">
                         We Create <span class="text-blue-600">Digital Success</span> for Your Brand
                     </h1>
                     <p class="py-4 text-xl text-gray-800">
                         We provide integrated marketing solutions that help your company grow and increase sales through innovative strategies.
                     </p>
-                    <ul class="py-4 flex justify-start gap-4 text-lg text-gray-700">
+                    <ul class="py-4 flex flex-wrap justify-start gap-4 text-lg text-gray-700">
                         <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>10+ Years Experience</li>
                         <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>+500 Clients</li>
                         <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>Professional Team</li>
@@ -214,56 +214,57 @@
             </div>
         </div>
     </section>
-    <footer class="h-[90vh] w-full bg-slate-900 text-white flex flex-col justify-between items-center">
-        <div class="w-11/12 px-6 flex justify-between items-center gap-10 py-20"> <!-- footer-top -->
-            <div class="w-1/2 flex flex-col justify-start space-y-6 bg-gray-800 p-6 rounded-3xl"> <!-- form -->
+    <footer class=" w-full bg-slate-900 text-white flex flex-col justify-between items-center">
+        <div class="w-11/12 px-6 flex flex-wrap lg:flex-nowrap justify-between items-center gap-14 py-14"> <!-- footer-top -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-start space-y-6 bg-gray-800 p-8 rounded-3xl"> <!-- form -->
                 <h3 class="font-bold text-2xl py-2">Contact Us</h3>
-                <input class="h-12 p-4 rounded-lg bg-gray-600 border border-gray-500 focus:outline-none focus:ring-4 focus:ring-blue-600" type="text" name="" placeholder="Full Name" id="">
-                <input class="h-12 p-4 rounded-lg bg-gray-600 border border-gray-500 focus:outline-none focus:ring-4 focus:ring-blue-600" type="email" name="" placeholder="Email Address" id="">
-                <textarea class="p-4 rounded-lg bg-gray-600 border border-gray-500 focus:outline-none focus:ring-4 focus:ring-blue-600" id="" cols="30" rows="5" placeholder="Your message..."></textarea>
-                <button class="h-12 p-2 bg-blue-600 w-full rounded-lg hover:bg-blue-700 duration-150 transition-all font-semibold">Send Message</button>
+                <input class="h-14 p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-4 focus:ring-blue-600" type="text" name="" placeholder="Full Name" id="">
+                <input class="h-14 p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-4 focus:ring-blue-600" type="email" name="" placeholder="Email Address" id="">
+                <textarea class="p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-4 focus:ring-blue-600" id="" cols="30" rows="5" placeholder="Your message..."></textarea>
+                <button class="h-14 p-2 bg-blue-600 w-full rounded-lg hover:bg-blue-700 duration-150 transition-all font-semibold">Send Message</button>
             </div>
-            <div class="w-1/2 flex flex-col"> <!-- contact-info -->
-                <h3>Contact Information</h3>
-                <div>
-                    <div> <!-- info -->
-                        <i class="fa-solid fa-location-dot"></i>
+            <div class="w-full lg:w-1/2 flex flex-col self-start space-y-10"> <!-- contact-info -->
+                <h3 class="font-bold text-2xl">Contact Information</h3>
+                <div class="flex flex-col space-y-4">
+                    <div class="h-12 flex gap-4"> <!-- info -->
+                        <i class="fa-solid fa-location-dot size-12 text-2xl text-blue-600 bg-sky-900 flex justify-center items-center rounded-lg"></i>
                         <div>
-                            <h4>Address</h4>
-                            <p>Cairo, Egypt</p>
+                            <h4 class="text-sm text-gray-400">Address</h4>
+                            <p class="font-semibold text-md">Cairo, Egypt</p>
                         </div>
                     </div>
-                    <div> <!-- info -->
-                        <i class="fa-solid fa-phone"></i>
+                    <div class="h-12 flex gap-4"> <!-- info -->
+                        <i class="fa-solid fa-phone size-12 text-2xl text-blue-600 bg-sky-900 flex justify-center items-center rounded-lg"></i>
                         <div>
-                            <h4>Phone</h4>
-                            <p>+20 123 456 7890</p>
+                            <h4 class="text-sm text-gray-400">Phone</h4>
+                            <p class="font-semibold text-md">+20 123 456 7890</p>
                         </div>
                     </div>
-                    <div> <!-- info -->
-                        <i class="fa-solid fa-envelope"></i>
+                    <div class="h-12 flex gap-4"> <!-- info -->
+                        <i class="fa-solid fa-envelope size-12 text-2xl text-blue-600 bg-sky-900 flex justify-center items-center rounded-lg"></i>
                         <div>
-                            <h4>Email</h4>
-                            <p>info@digitalpro.com</p>
+                            <h4 class="text-sm text-gray-400">Email</h4>
+                            <p class="font-semibold text-md">info@digitalpro.com</p>
                         </div>
                     </div>
                 </div> <!-- info-container -->
-                <div> <!-- map -->
-                    <div>
-                        <i class="fa-solid fa-map"></i>
+                <div class="w-full h-44 bg-gradient-to-br from-blue-700 to-purple-600 rounded-xl"> <!-- map -->
+                    <div class="w-full h-full bg-gray-600 bg-opacity-60 flex justify-center items-center gap-2 rounded-xl">
+                        <i class="fa-solid fa-map text-4xl text-gray-400"></i>
                         <span>Site Map</span>
                     </div>
                 </div> 
             </div> <!-- /left-footer -->
         </div> <!-- /top-footer -->
-        <div class="w-full border-t border-gray-600"></div>
-        <div class="w-11/12 px-6 py-4 flex justify-between items-center">
-            <p>&copy; 2024 DigitalPro. All rights reserved.</p> <!-- copywrite -->
-            <div>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <div class="w-full border-t border-gray-800">
+            <div class="w-11/12 m-auto px-6 py-8 flex justify-between items-center">
+                <p class="text-sm text-gray-400">&copy; 2024 DigitalPro. All rights reserved.</p> <!-- copywrite -->
+                <div class="text-xl text-gray-400 flex gap-6 transition-all duration-150">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f hover:text-white"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter hover:text-white"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in hover:text-white"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram hover:text-white"></i></a>
+                </div>
             </div>
         </div>
     </footer>
