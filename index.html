@@ -10,7 +10,7 @@
 </head>
 <body class="font-sans">
     <header class="bg-white shadow-lg shadow-gray-300 fixed top-0 left-0 w-full z-10 p-0">
-        <div class="h-16 w-11/12 m-auto flex justify-between items-center py-9 px-1 lg:px-6">
+        <div class="h-16 lg:w-11/12 m-auto flex justify-between items-center py-9 px-4 lg:px-6">
             <p class="text-blue-600 text-3xl font-bold relative pr-30 min-w-64">DigitalPro <span class="text-xs font-normal absolute top-2 ml-2 px-2 py-1 whitespace-nowrap bg-blue-100 rounded-full">Marketing Agency</span></p>
             <nav class="hidden lg:flex justify-between gap-8 text-md font-semibold text-gray-600 ">
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-all">Home</a>
@@ -22,10 +22,10 @@
             <button class="px-6 py-2 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-700 hover:shadow-lg transition-all shadow-md">Get a Consultation</button>
         </div>
     </header>
-    <main class="h-screen mt-16 p-0">
-        <div class="h-full bg-gradient-to-br from-blue-50 via-white to-purple-50 relative"> <!-- overlay -->
-            <div class="h-full lg:h-3/5 w-11/12 py-12 lg:py-9 px-1 lg:px-6 m-auto flex justify-center items-center gap-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> <!-- container -->
-                <div class="w-full lg:w-1/2 h-full">
+    <main class="min-h-screen pt-16">
+        <div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex justify-center items-center"> <!-- overlay -->
+            <div class="h-auto w-full lg:h-3/5 lg:w-11/12 py-14 lg:py-9 px-4 lg:px-6 m-auto flex justify-center items-center gap-12"> <!-- container -->
+                <div class="w-full lg:w-1/2 h-full"> <!-- main-intro -->
                     <h1 class="text-4xl lg:text-6xl font-bold py-4">
                         We Create <span class="text-blue-600">Digital Success</span> for Your Brand
                     </h1>
@@ -37,12 +37,12 @@
                         <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>+500 Clients</li>
                         <li class="inline-block"><i class="fa-solid fa-circle-check bg-white text-green-500 text-xl leading-5 rounded-full mr-1"></i>Professional Team</li>
                     </ul>
-                    <div class="py-4 flex gap-4 text-lg">
+                    <div class="py-4 flex flex-wrap gap-4 text-lg">
                         <button class="px-8 py-4 bg-blue-600 rounded-xl text-white font-semibold hover:bg-blue-700 hover:shadow-xl transition-all shadow-md">Start Your Journey Now</button>
                         <button class="px-8 py-4 border-2 border-gray-200 rounded-xl hover:text-blue-700 hover:border-blue-700 transition-all ease-linear duration-300 font-semibold"><i class="fa-solid fa-play mr-1"></i> Watch the video</button>
                     </div>
                 </div>
-                <div class="hidden lg:block w-1/2 h-96 bg-gradient-to-br from-blue-400 to-purple-400 rounded-3xl relative">
+                <div class="hidden lg:block w-1/2 h-96 bg-gradient-to-br from-blue-400 to-purple-400 rounded-3xl relative"> <!-- main-image -->
                     <div class="absolute size-20 rounded-full bg-white opacity-20 right-10 top-10"></div>
                     <div class="absolute size-32 rounded-full bg-white opacity-20 left-10 bottom-10"></div>
                     <i class="fa-solid fa-chart-line absolute text-white opacity-50 left-1/2 top-1/2 text-8xl -translate-x-1/2 -translate-y-1/2"></i>
@@ -59,14 +59,14 @@
             </div>
         </div>
     </main>
-    <section class="pt-10 bg-white min-h-[80vh]">
+    <section class="pt-10 bg-white min-h-[80vh]"> <!-- integrated Services -->
         <h2 class="pt-8 text-4xl text-center font-bold ">Our Integrated Services</h2>
         <p class="text-center text-gray-600 text-xl p-4">We offer a comprehensive range of digital solutions to grow your business.</p>
         <div class="w-28 m-auto h-1 bg-blue-600 rounded-full"></div>
-        <div class="w-11/12 py-9 px-6 m-auto flex flex-wrap justify-between gap-4"> <!-- container -->
-            <div class="group w-full lg:w-[32%]  border border-gray-300 p-8 rounded-xl hover:bg-white hover:border-blue-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
+        <div class="lg:w-11/12 py-9 px-4 lg:px-6 m-auto flex flex-wrap justify-between items-center gap-x-2 gap-y-8 lg:gap-4"> <!-- container -->
+            <div class="group w-full md:w-[48%] lg:w-[32%]  border border-gray-200 p-8 rounded-xl hover:bg-white hover:border-blue-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
                 <div class="size-16 flex justify-center items-center bg-blue-100 rounded-xl  text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                    <i class="fa-brands fa-facebook text-3xl"></i>
+                    <i class="fa-solid fa-chart-line text-3xl"></i>
                 </div>
                 <h3 class="py-4 text-2xl font-bold">Search Engine Optimization</h3>
                 <p class="text-gray-600 mb-4">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
@@ -76,24 +76,24 @@
                     <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
                 </ul>
             </div>
-            <div class="group w-full lg:w-[32%] border border-gray-300 p-8 rounded-xl hover:bg-white hover:border-blue-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
-                <div class="size-16 flex justify-center items-center bg-blue-100 rounded-xl  text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+            <div class="group  mt-0 w-full md:w-[48%] lg:w-[32%]  border border-gray-200 p-8 rounded-xl hover:bg-white hover:border-purple-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
+                <div class="size-16 flex justify-center items-center bg-purple-100 rounded-xl  text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
                     <i class="fa-brands fa-facebook text-3xl"></i>
                 </div>
-                <h3 class="py-4 text-2xl font-bold">Search Engine Optimization</h3>
-                <p class="text-gray-600 mb-4">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
+                <h3 class="py-4 text-2xl font-bold">Social Media Marketing</h3>
+                <p class="text-gray-600 mb-4">We manage your advertising campaigns on Facebook and Instagram with high professionalism.</p>
                 <ul>
                     <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
                     <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
                     <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
                 </ul>
             </div>
-            <div class="group w-full lg:w-[32%] border border-gray-300 p-8 rounded-xl hover:bg-white hover:border-blue-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
-                <div class="size-16 flex justify-center items-center bg-blue-100 rounded-xl  text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                    <i class="fa-brands fa-facebook text-3xl"></i>
+            <div class="group w-full md:w-[48%] lg:w-[32%]  border border-gray-200 p-8 rounded-xl hover:bg-white hover:border-green-600 hover:shadow-2xl transition-all duration-300"> <!-- card -->
+                <div class="size-16 flex justify-center items-center bg-green-100 rounded-xl  text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-code text-3xl"></i>
                 </div>
-                <h3 class="py-4 text-2xl font-bold">Search Engine Optimization</h3>
-                <p class="text-gray-600 mb-4">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
+                <h3 class="py-4 text-2xl font-bold">Website Design & Development</h3>
+                <p class="text-gray-600 mb-4">We design professional websites that are compatible with all devices.</p>
                 <ul>
                     <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
                     <li class="text-gray-600 py-1"><i class="fa-solid fa-check mr-2 text-green-500"></i>Keyword Analysis</li>
@@ -102,33 +102,33 @@
             </div>
         </div>
     </section>
-    <section class="min-h-[60vh] lg:min-h-[30vh] bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
+    <section class="min-h-[60vh] lg:min-h-[40vh] bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
         <div class="absolute size-60 rounded-full bg-white opacity-15 left-0 top-0 -translate-x-1/2 -translate-y-1/2"></div>
         <div class="absolute size-96 rounded-full bg-white opacity-15 right-0 bottom-0 translate-x-1/2 translate-y-1/2"></div>
-        <div class="w-11/12 py-9 h-full  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-wrap justify-around items-center content-around"> <!-- container -->
+        <div class="w-11/12 py-9 min-h-[60vh]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-wrap justify-around items-center content-around"> <!-- container -->
             <div class="lg:w-1/4 text-center p-4">
                 <h3 class="font-bold text-white text-6xl mb-2">+500</h3>
                 <p class="text-xl text-gray-200">Clients Worldwide</p>
             </div>
             <div class="lg:w-1/4 text-center p-4">
-                <h3 class="font-bold text-white text-6xl mb-2">+500</h3>
-                <p class="text-xl text-gray-200">Clients Worldwide</p>
+                <h3 class="font-bold text-white text-6xl mb-2">+50</h3>
+                <p class="text-xl text-gray-200">Marketing Experts</p>
             </div>
             <div class="lg:w-1/4 text-center p-4">
-                <h3 class="font-bold text-white text-6xl mb-2">+500</h3>
-                <p class="text-xl text-gray-200">Clients Worldwide</p>
+                <h3 class="font-bold text-white text-6xl mb-2">+100</h3>
+                <p class="text-xl text-gray-200">Projects Completed</p>
             </div>
             <div class="lg:w-1/4 text-center p-4">
-                <h3 class="font-bold text-white text-6xl mb-2">+500</h3>
-                <p class="text-xl text-gray-200">Clients Worldwide</p>
+                <h3 class="font-bold text-white text-6xl mb-2">+10</h3>
+                <p class="text-xl text-gray-200">Years of Experience</p>
             </div>
         </div>
     </section>
-    <section class="lg:h-[85vh] py-8">
+    <section class="lg:min-h-[85vh] py-8 flex flex-col justify-center">
         <h2 class="p-4 text-center text-4xl font-bold">Our Creative Team</h2>
         <p class="text-center text-gray-700 text-lg">Agency elite group of the best digital marketing experts.</p>
-        <div class="w-11/12 h-[85%] px-6 py-10 m-auto flex flex-wrap content-around lg:justify-between items-center gap-8 box-border"> <!-- container -->
-            <div class= "w-[90%]  md:w-[40%] lg:w-[23%] group shadow-lg hover:shadow-2xl rounded-3xl"> <!-- card -->
+        <div class="w-full lg:w-11/12 h-[90%] px-4 lg:px-6 py-10 m-auto flex flex-wrap lg:flex-nowrap content-around justify-center lg:justify-between items-center gap-x-6 gap-y-8 lg:gap-8 box-border"> <!-- container -->
+            <div class= "w-full  md:w-[44%] lg:w-[23%] group shadow-lg hover:shadow-2xl rounded-3xl"> <!-- card -->
                 <div class="h-64 w-full relative"> <!-- card-image -->
                     <div class="w-full h-full absolute flex justify-center items-center bg-gradient-to-br from-blue-400 to-purple-400 rounded-t-3xl"> <!-- card-selfie -->
                         <i class="fa-solid fa-circle-user text-8xl text-gray-50"></i>
@@ -149,7 +149,7 @@
                     <p class="text-gray-700 text-sm">10 years of experience in digital marketing</p>
                 </div>
             </div>
-            <div class= "w-[90%] lg:w-[23%] rounded-xl group shadow-lg hover:shadow-2xl"> <!-- card -->
+            <div class= "w-full  md:w-[44%] lg:w-[23%] group shadow-lg hover:shadow-2xl rounded-3xl"> <!-- card -->
                 <div class="h-64 w-full relative"> <!-- card-image -->
                     <div class="w-full h-full absolute flex justify-center items-center bg-gradient-to-br from-purple-400 to-pink-400 rounded-t-3xl"> <!-- card-selfie -->
                         <i class="fa-solid fa-circle-user text-8xl text-gray-50"></i>
@@ -170,7 +170,7 @@
                     <p class="text-gray-700 text-sm">Specialized in search engine optimization</p>
                 </div>
             </div>
-            <div class= "w-[90%] lg:w-[23%] rounded-xl group shadow-lg hover:shadow-2xl"> <!-- card -->
+            <div class= "w-full  md:w-[44%] lg:w-[23%] group shadow-lg hover:shadow-2xl rounded-3xl"> <!-- card -->
                 <div class="h-64 w-full relative"> <!-- card-image -->
                     <div class="w-full h-full absolute flex justify-center items-center bg-gradient-to-br from-green-400 to-blue-400 rounded-t-3xl"> <!-- card-selfie -->
                         <i class="fa-solid fa-circle-user text-8xl text-gray-50"></i>
@@ -191,7 +191,7 @@
                     <p class="text-gray-700 text-sm">Expert in web development</p>
                 </div>
             </div>
-            <div class= "w-[90%] lg:w-[23%] rounded-xl group shadow-lg hover:shadow-2xl"> <!-- card -->
+            <div class= "w-full  md:w-[44%] lg:w-[23%] group shadow-lg hover:shadow-2xl rounded-3xl"> <!-- card -->
                 <div class="h-64 w-full relative"> <!-- card-image -->
                     <div class="w-full h-full absolute flex justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-400 rounded-t-3xl"> <!-- card-selfie -->
                         <i class="fa-solid fa-circle-user text-8xl text-gray-50"></i>
@@ -214,8 +214,8 @@
             </div>
         </div>
     </section>
-    <footer class=" w-full bg-slate-900 text-white flex flex-col justify-between items-center">
-        <div class="w-11/12 px-6 flex flex-wrap lg:flex-nowrap justify-between items-center gap-14 py-14"> <!-- footer-top -->
+    <footer class="w-full bg-slate-900 text-white flex flex-col justify-between items-center">
+        <div class="w-full lg:w-11/12 px-4 lg:px-6 flex flex-wrap lg:flex-nowrap justify-between items-center gap-14 py-14"> <!-- footer-top -->
             <div class="w-full lg:w-1/2 flex flex-col justify-start space-y-6 bg-gray-800 p-8 rounded-3xl"> <!-- form -->
                 <h3 class="font-bold text-2xl py-2">Contact Us</h3>
                 <input class="h-14 p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-4 focus:ring-blue-600" type="text" name="" placeholder="Full Name" id="">
@@ -257,9 +257,9 @@
             </div> <!-- /left-footer -->
         </div> <!-- /top-footer -->
         <div class="w-full border-t border-gray-800">
-            <div class="w-11/12 m-auto px-6 py-8 flex justify-between items-center">
+            <div class="w-full md:w-11/12 m-auto px-4 py-4 lg:p-6 flex flex-wrap content-between justify-center md:justify-between lg:justify-between items-center gap-4">
                 <p class="text-sm text-gray-400">&copy; 2024 DigitalPro. All rights reserved.</p> <!-- copywrite -->
-                <div class="text-xl text-gray-400 flex gap-6 transition-all duration-150">
+                <div class="text-xl w-full md:w-auto lg:w-auto text-gray-400 flex  justify-center gap-6 transition-all duration-150 text-center">
                     <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f hover:text-white"></i></a>
                     <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter hover:text-white"></i></a>
                     <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in hover:text-white"></i></a>
